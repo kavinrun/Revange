@@ -2,17 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : Character
+public class Player : MonoBehaviour
 {
-    private Collider2D colli;
+    private Rigidbody2D rb;
+    private Collider2D coll;
 
     [SerializeField]
-    private bool isGround;
+    private float jumpForce;
+    [SerializeField]
+    private int jumpCount;
+    [SerializeField]
+    private int jumpMaxCount;
+    [SerializeField]
+    private float moveSpeed;
+    [SerializeField]
+    private float attack;
+    [SerializeField]
+    private float health;
+    [SerializeField]
+    private bool isGrounded;
     [SerializeField]
     private float feetRayDistance;
 
     private float FootOffsetX;
     private float FootOffsetY;
+
+    private bool jumpPressed = false;
 
     [SerializeField]
     private RaycastHit2D leftFootCheck;
@@ -21,19 +36,23 @@ public class Player : Character
     [SerializeField]
     private LayerMask groundLayer;
 
+    private PhysicsMaterial2D smoothPhysicsMaterial;
+
     private void Awake()
     {
-        base.Awake();
+        rb = GetComponent<Rigidbody2D>();
+        coll = GetComponent<Collider2D>();
 
-        colli = transform.GetComponent<Collider2D>();
-        FootOffsetX = colli.bounds.size.x/2;
-        FootOffsetY = colli.bounds.size.y/2;
+        FootOffsetX = coll.bounds.size.x/2;
+        FootOffsetY = coll.bounds.size.y/2;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        jumpCount = jumpMaxCount;
+
+        smoothPhysicsMaterial = Resources.Load<PhysicsMaterial2D>("Smooth");
     }
 
     // Update is called once per frame
@@ -41,15 +60,45 @@ public class Player : Character
     {
         GroundCheck();
 
+        HandleInput();
+    }
+
+    private void HandleInput()
+    {
         if (Input.GetButtonDown("Jump"))
         {
-            Jump();
+            jumpPressed = true;
         }
     }
 
     private void FixedUpdate()
     {
-        base.Movement();
+        Movement();
+
+        if (jumpPressed)
+        {
+            Jump();
+        }
+    }
+
+    private void Movement()
+    {
+        float horizontalMove = Input.GetAxis("Horizontal");
+        rb.velocity = new Vector2(horizontalMove * moveSpeed, rb.velocity.y);
+
+        float horizontalFlip = Input.GetAxisRaw("Horizontal");
+        if (horizontalFlip != 0)
+        {
+            if (horizontalFlip > 0)
+            {
+                horizontalFlip = 1;
+            }
+            else
+            {
+                horizontalFlip = -1;
+            }
+            transform.localScale = new Vector3(horizontalFlip, 1, 1);
+        }
     }
 
     private bool GroundCheck()
@@ -62,28 +111,30 @@ public class Player : Character
 
         if (leftFootCheck || rightFootCheck)
         {
-            isGround = true;
+            isGrounded = true;
+            jumpCount = jumpMaxCount;
             rb.sharedMaterial = null;
         }
         else
         {
-            isGround = false;
-            rb.sharedMaterial = Resources.Load<PhysicsMaterial2D>("Smooth");
+            isGrounded = false;
+            rb.sharedMaterial = smoothPhysicsMaterial;
         }
 
-        return isGround;
+        return isGrounded;
     }
 
     void Jump()
     {
-        if (isGround == true)
+        if (jumpCount > 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            jumpCount--;
+            jumpPressed = false;
         }
-    }
-
-    private void Dash()
-    {
-
+        else
+        {
+            jumpPressed = false;
+        }
     }
 }
