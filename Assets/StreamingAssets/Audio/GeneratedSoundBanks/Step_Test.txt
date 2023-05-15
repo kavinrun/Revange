@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3589785957	Step_Player			\Default Work Unit\Step_Player	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	483292463	Step_2	D:\Wwise\Project\SoundBank_Test\.cache\Windows\SFX\Sound_Defence_MachineGun_Once_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Step_Player\Step_2		49656
+	539522554	Step_3	D:\Wwise\Project\SoundBank_Test\.cache\Windows\SFX\Sound_Defence_MachineGun_Once_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Step_Player\Step_3		49656
+	694931801	Step_1	D:\Wwise\Project\SoundBank_Test\.cache\Windows\SFX\Sound_Defence_MachineGun_Once_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Step_Player\Step_1		49656
+
