@@ -2,11 +2,11 @@
 <PlatformInfo>
 	<Platform Name="Windows" BasePlatform="Windows" Generator="2022.1.2.8150"/>
 	<RootPaths>
-		<ProjectRoot>../Wwise/Project/SoundBank_Test</ProjectRoot>
-		<SourceFilesRoot>../Wwise/Project/SoundBank_Test/.cache/Windows</SourceFilesRoot>
+		<ProjectRoot>../../Wwise/Project/Revange</ProjectRoot>
+		<SourceFilesRoot>../../Wwise/Project/Revange/.cache/Windows</SourceFilesRoot>
 		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>../Wwise/Project/SoundBank_Test/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>../../Wwise/Project/Revange/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DefaultAlign>16</DefaultAlign>
 	<Settings>
@@ -28,5 +28,5 @@
 		<PrintObjectGuid>false</PrintObjectGuid>
 		<PrintObjectPath>false</PrintObjectPath>
 	</Settings>
-	<FileHash>{04E6645A-0CFB-BCB7-CC9B-60C2D99BEB0E}</FileHash>
+	<FileHash>{1B911056-0235-15F0-DBBC-E5766AB5AC1A}</FileHash>
 </PlatformInfo>

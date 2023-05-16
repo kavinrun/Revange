@@ -1,0 +1,31 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3589785957	Step_Player			\Step_Player\Step_Player	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2528658256	Ground			\Step\Ground	
+
+Switch	ID	Name	Switch Group			Notes
+	2058049674	Wood	Ground			
+	2654748154	Water	Ground			
+	3725073853	Cement	Ground			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	85904053	Step_Player_Wood_5	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Wood\Step_Player_Wood_5_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Wood\Step_Player_Wood_5		273516
+	114402128	Step_Player_Cement_3	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Cement\Step_Player_Cement_3_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Cement\Step_Player_Cement_3		277044
+	117758902	Step_Player_Wood_3	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Wood\Step_Player_Wood_3_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Wood\Step_Player_Wood_3		277044
+	212408676	Step_Player_Water_2	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Water\Step_Player_Water_2_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Water\Step_Player_Water_2		277044
+	385357079	Step_Player_Water_3	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Water\Step_Player_Water_3_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Water\Step_Player_Water_3		277044
+	426853589	Step_Player_Cement_2	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Cement\Step_Player_Cement_2_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Cement\Step_Player_Cement_2		278808
+	432194549	Step_Player_Wood_1	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Wood\Step_Player_Wood_1_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Wood\Step_Player_Wood_1		278808
+	455262820	Step_Player_Wood_6	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Wood\Step_Player_Wood_6_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Wood\Step_Player_Wood_6		277044
+	486625861	Step_Player_Water_4	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Water\Step_Player_Water_4_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Water\Step_Player_Water_4		277044
+	505240264	Step_Player_Cement_4	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Cement\Step_Player_Cement_4_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Cement\Step_Player_Cement_4		280572
+	543391547	Step_Player_Cement_6	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Cement\Step_Player_Cement_6_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Cement\Step_Player_Cement_6		277044
+	564222141	Step_Player_Water_1	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Water\Step_Player_Water_1_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Water\Step_Player_Water_1		277044
+	601877712	Step_Player_Wood_2	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Wood\Step_Player_Wood_2_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Wood\Step_Player_Wood_2		282336
+	657031019	Step_Player_Cement_1	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Cement\Step_Player_Cement_1_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Cement\Step_Player_Cement_1		278808
+	669903088	Step_Player_Wood_4	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Wood\Step_Player_Wood_4_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Wood\Step_Player_Wood_4		280572
+	968018170	Step_Player_Water_5	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Water\Step_Player_Water_5_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Water\Step_Player_Water_5		275280
+	1049923094	Step_Player_Cement_5	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Cement\Step_Player_Cement_5_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Cement\Step_Player_Cement_5		280572
+	1054318113	Step_Player_Water_6	D:\Wwise\Project\Revange\.cache\Windows\SFX\Step\Water\Step_Player_Water_6_10C4C929.wem		\Actor-Mixer Hierarchy\Step_Player\Step\Water\Step_Player_Water_6		280572
+

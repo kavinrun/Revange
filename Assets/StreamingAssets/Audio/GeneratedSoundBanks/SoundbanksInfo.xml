@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<RootPaths>
-		<ProjectRoot>../Wwise/Project/SoundBank_Test</ProjectRoot>
-		<SourceFilesRoot>../Wwise/Project/SoundBank_Test/.cache/Windows</SourceFilesRoot>
+		<ProjectRoot>../../Wwise/Project/Revange</ProjectRoot>
+		<SourceFilesRoot>../../Wwise/Project/Revange/.cache/Windows</SourceFilesRoot>
 		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>../Wwise/Project/SoundBank_Test/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>../../Wwise/Project/Revange/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{66834572-B8EA-99A4-7528-A01A4873C5C2}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,160 +21,142 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
-			<GameParameters>
-				<GameParameter Id="822163944" Name="SS_Air_RPM"/>
-				<GameParameter Id="1029930033" Name="SS_Air_Fury"/>
-				<GameParameter Id="1351367891" Name="SS_Air_Fear"/>
-				<GameParameter Id="2648548617" Name="SS_Air_Month"/>
-				<GameParameter Id="3002758120" Name="SS_Air_Freefall"/>
-				<GameParameter Id="3074696722" Name="SS_Air_Size"/>
-				<GameParameter Id="3203397129" Name="SS_Air_TimeOfDay"/>
-				<GameParameter Id="3715662592" Name="SS_Air_Storm"/>
-				<GameParameter Id="3847924954" Name="SS_Air_Presence"/>
-				<GameParameter Id="4160247818" Name="SS_Air_Turbulence"/>
-			</GameParameters>
-			<AcousticTextures>
-				<AcousticTexture Id="504532776" Name="Brick">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="513139656" Name="Mountain">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="841620460" Name="Concrete">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="1755085759" Name="Wood_Deep">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="1873957695" Name="Anechoic">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="1970351858" Name="Fabric">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="2058049674" Name="Wood">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="2412606308" Name="Carpet">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="2637588553" Name="Tile">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="2928161104" Name="Curtains">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="3195498748" Name="Cork_Tiles">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="3670307564" Name="Drywall">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="4168643977" Name="Acoustic_Banner">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
-					</Properties>
-				</AcousticTexture>
-				<AcousticTexture Id="4262522749" Name="Wood_Bright">
-					<Properties>
-						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
-						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
-						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
-						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
-					</Properties>
-				</AcousticTexture>
-			</AcousticTextures>
+			<SwitchGroups>
+				<SwitchGroup Id="2528658256" Name="Ground">
+					<Switches>
+						<Switch Id="2058049674" Name="Wood"/>
+						<Switch Id="2654748154" Name="Water"/>
+						<Switch Id="3725073853" Name="Cement"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2696019690" Type="User" Language="SFX" Hash="{E2FDAB4E-5790-D236-8925-03105EDCBFBA}">
-			<ShortName>Step_Test</ShortName>
-			<Path>Step_Test.bnk</Path>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{A1A8DFF7-FC5B-2C1B-8D69-1AE998EBABC8}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
 			<Media>
-				<File Id="483292463" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sound_Defence_MachineGun_Once_2.wav</ShortName>
-					<CachePath>SFX/Sound_Defence_MachineGun_Once_2_10C4C929.wem</CachePath>
+				<File Id="85904053" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Wood\Step_Player_Wood_5.wav</ShortName>
+					<CachePath>SFX/Step/Wood/Step_Player_Wood_5_10C4C929.wem</CachePath>
 				</File>
-				<File Id="539522554" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sound_Defence_MachineGun_Once_1.wav</ShortName>
-					<CachePath>SFX/Sound_Defence_MachineGun_Once_1_10C4C929.wem</CachePath>
+				<File Id="114402128" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Cement\Step_Player_Cement_3.wav</ShortName>
+					<CachePath>SFX/Step/Cement/Step_Player_Cement_3_10C4C929.wem</CachePath>
 				</File>
-				<File Id="694931801" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Sound_Defence_MachineGun_Once_3.wav</ShortName>
-					<CachePath>SFX/Sound_Defence_MachineGun_Once_3_10C4C929.wem</CachePath>
+				<File Id="117758902" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Wood\Step_Player_Wood_3.wav</ShortName>
+					<CachePath>SFX/Step/Wood/Step_Player_Wood_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="212408676" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Water\Step_Player_Water_2.wav</ShortName>
+					<CachePath>SFX/Step/Water/Step_Player_Water_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="385357079" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Water\Step_Player_Water_3.wav</ShortName>
+					<CachePath>SFX/Step/Water/Step_Player_Water_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="426853589" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Cement\Step_Player_Cement_2.wav</ShortName>
+					<CachePath>SFX/Step/Cement/Step_Player_Cement_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="432194549" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Wood\Step_Player_Wood_1.wav</ShortName>
+					<CachePath>SFX/Step/Wood/Step_Player_Wood_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="455262820" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Wood\Step_Player_Wood_6.wav</ShortName>
+					<CachePath>SFX/Step/Wood/Step_Player_Wood_6_10C4C929.wem</CachePath>
+				</File>
+				<File Id="486625861" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Water\Step_Player_Water_4.wav</ShortName>
+					<CachePath>SFX/Step/Water/Step_Player_Water_4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="505240264" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Cement\Step_Player_Cement_4.wav</ShortName>
+					<CachePath>SFX/Step/Cement/Step_Player_Cement_4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="543391547" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Cement\Step_Player_Cement_6.wav</ShortName>
+					<CachePath>SFX/Step/Cement/Step_Player_Cement_6_10C4C929.wem</CachePath>
+				</File>
+				<File Id="564222141" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Water\Step_Player_Water_1.wav</ShortName>
+					<CachePath>SFX/Step/Water/Step_Player_Water_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="601877712" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Wood\Step_Player_Wood_2.wav</ShortName>
+					<CachePath>SFX/Step/Wood/Step_Player_Wood_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="657031019" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Cement\Step_Player_Cement_1.wav</ShortName>
+					<CachePath>SFX/Step/Cement/Step_Player_Cement_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="669903088" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Wood\Step_Player_Wood_4.wav</ShortName>
+					<CachePath>SFX/Step/Wood/Step_Player_Wood_4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="968018170" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Water\Step_Player_Water_5.wav</ShortName>
+					<CachePath>SFX/Step/Water/Step_Player_Water_5_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1049923094" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Cement\Step_Player_Cement_5.wav</ShortName>
+					<CachePath>SFX/Step/Cement/Step_Player_Cement_5_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1054318113" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Step\Water\Step_Player_Water_6.wav</ShortName>
+					<CachePath>SFX/Step/Water/Step_Player_Water_6_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
 				<Event Id="3589785957" Name="Step_Player">
-					<MediaRefs>
-						<MediaRef Id="483292463"/>
-						<MediaRef Id="539522554"/>
-						<MediaRef Id="694931801"/>
-					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2528658256" Id="2654748154"/>
+							<MediaRefs>
+								<MediaRef Id="212408676"/>
+								<MediaRef Id="385357079"/>
+								<MediaRef Id="486625861"/>
+								<MediaRef Id="564222141"/>
+								<MediaRef Id="968018170"/>
+								<MediaRef Id="1054318113"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2528658256" Id="3725073853" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="114402128"/>
+								<MediaRef Id="426853589"/>
+								<MediaRef Id="505240264"/>
+								<MediaRef Id="543391547"/>
+								<MediaRef Id="657031019"/>
+								<MediaRef Id="1049923094"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2528658256" Id="2058049674"/>
+							<MediaRefs>
+								<MediaRef Id="85904053"/>
+								<MediaRef Id="117758902"/>
+								<MediaRef Id="432194549"/>
+								<MediaRef Id="455262820"/>
+								<MediaRef Id="601877712"/>
+								<MediaRef Id="669903088"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="2528658256" Name="Ground">
+					<Switches>
+						<Switch Id="2058049674" Name="Wood"/>
+						<Switch Id="2654748154" Name="Water"/>
+						<Switch Id="3725073853" Name="Cement"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CA1B91BF-3392-7885-F614-FF3C99C1B2FF}</FileHash>
+	<FileHash>{67F05E0D-2D06-72F4-B82C-8B386F216C3F}</FileHash>
 </SoundBanksInfo>
