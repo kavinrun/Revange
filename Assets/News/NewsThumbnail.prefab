@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.46748462, g: 0.6792453, b: 0.0993236, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -117,11 +117,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf6931d7351fc6408fdfda578d132ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Hello
-  content: Hmmm
   titleText: {fileID: 9054002322179424054}
   contentText: {fileID: 4527021018663794735}
   detailPopupPrefab: {fileID: 2676136804643076982, guid: f874781c06b14ca41b375038fd6156ca, type: 3}
+  negativeColor: {r: 0.8679245, g: 0.46290156, b: 0.20060521, a: 1}
+  neutralColor: {r: 0.22087428, g: 0.8301887, b: 0.05873976, a: 1}
+  positiveColor: {r: 0.112273075, g: 0.553364, b: 0.8207547, a: 1}
 --- !u!1 &3943918807731964609
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +273,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4

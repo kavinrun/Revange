@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -16,26 +17,17 @@ public class NewsDetailPopup : MonoBehaviour, IPointerClickHandler
     private Image popupPanel;
     [SerializeField]
     private GameObject videoEditorPrefab;
+    
     private GameObject videoEditorInstance;
-    private string title;
-    public string Title
+    private News news;
+    public News News
     {
         set
         {
-            title = value;
-            titleText.text = title;
+            news = value;
+            titleText.text = news.Title.Title;
+            
         }
-        get => title;
-    }
-    private string content;
-    public string Content
-    {
-        set
-        {
-            content = value;
-            contentText.text = content;
-        }
-        get => content;
     }
     private void Start()
     {
@@ -49,6 +41,7 @@ public class NewsDetailPopup : MonoBehaviour, IPointerClickHandler
             videoEditorInstance = Instantiate(videoEditorPrefab, FindObjectOfType<Canvas>().transform);
         }
         videoEditorInstance.SetActive(true);
+        videoEditorInstance.GetComponent<VideoEditor>().News = news;
         gameObject.SetActive(false);
     }
 

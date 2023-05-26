@@ -6,31 +6,57 @@ using UnityEngine.UI;
 public class VideoEditor : MonoBehaviour
 {
     [SerializeField]
-    private string[] paragraphs;
-    [SerializeField]
     private Paragraph paragraphPrefab;
     [SerializeField]
     private GameObject optionPanel;
     [SerializeField]
     private GameObject chosenPanel;
     [SerializeField]
+    private Text titleText;
+    [SerializeField]
     private Button button;
-    private void Start()
-    {
-        button.onClick.AddListener(ChangeTitle);
-        foreach (var paragraph in paragraphs) 
+    private News news;
+    public News News 
+    { 
+        set
         {
-            var para = Instantiate(paragraphPrefab, optionPanel.transform);
-            para.Clicked += ParagraphSelected;
-            para.Content = paragraph;
+            news = value;
+            titleText.text = news.Title.Title;
+            LoadOptins();
         }
+        get => news;
     }
+    private int currentParagraph = 0;
+
     private void ParagraphSelected(Paragraph para)
     {
         para.transform.SetParent(chosenPanel.transform);
+        FindObjectOfType<NewsScore>().Score += para.ParagraphOption.Score;
+        currentParagraph++;
+        LoadOptins();
     }
-    private void ChangeTitle()
-    {
 
+    private void LoadOptins()
+    {
+        if (currentParagraph == News.Options.Length)
+        {
+            foreach (Transform child in optionPanel.transform)
+            {
+                Destroy(child.gameObject);
+            }
+            button.gameObject.SetActive(true);
+            print(FindObjectOfType<NewsScore>().Score);
+            return;
+        }
+        foreach (Transform child in optionPanel.transform)
+        {
+            Destroy(child.gameObject);
+        }
+        foreach (var paragraph in News.Options[currentParagraph])
+        {
+            var para = Instantiate(paragraphPrefab, optionPanel.transform);
+            para.Clicked += ParagraphSelected;
+            para.ParagraphOption = paragraph;
+        }
     }
 }

@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class News
 {
-    public string OriginalTitle { get; set; }
+    public TitleOption Title { get; set; }
     public string LevelId { get; set; }
-    public TitleOption[] TitleOptions { get; set; }
-    public ParagraphOption[] Options { get; set; }
+    public ParagraphOption[][] Options { get; set; }
     public int Score { get; set; }
     public string ContentId { get; set; }
 }
@@ -22,6 +21,7 @@ public class ParagraphOption
 
 public class TitleOption
 {
+    public string Id { set; get; }
     public string LevelId { get; set; }
     public string Title { get; set; }
     public int Score { set; get; }

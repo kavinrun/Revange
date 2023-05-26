@@ -69,7 +69,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -168,5 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b58cddf114f4454abd2aaa89346e30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  content: 
   text: {fileID: 1485627396673073467}
+  negativeColor: {r: 0.990566, g: 0.3658225, b: 0.1541919, a: 1}
+  neutralColor: {r: 0.07075471, g: 1, b: 0.1291365, a: 1}
+  positiveColor: {r: 0.23642756, g: 0.5039028, b: 0.7264151, a: 1}

@@ -21,7 +21,29 @@ internal static class NewsLoader
         }
         LoadTitleOptions(TitleOptionsFile);
         LoadParagraphOptions(ParagraphOptionsFile);
-        return News.Where(n => n.LevelId.EndsWith(level.ToString())).ToArray();
+        LoadNews(level);
+        return News;
+    }
+
+    private static void LoadNews(int level)
+    {
+        var titles = TitleOptions.Where(t => t.LevelId.EndsWith(level.ToString())).ToArray();
+        News = titles.Select(t =>
+        {
+            var paragraphs = ParagraphOptions
+            .Where(p => p.LevelId.EndsWith(level.ToString()) && p.OptionId.StartsWith("news" + t.Id));
+            return new News()
+            {
+                Title = t,
+                Score = t.Score,
+                LevelId = t.LevelId,
+                Options = paragraphs
+                .GroupBy(p => p.OptionId[p.OptionId.Length-2])
+                .OrderBy(g => g.Key)
+                .Select(g => g.OrderBy(o => o.OptionId.Last()).ToArray())
+                .ToArray(),
+            };
+        }).ToArray();
     }
 
     private static void LoadParagraphOptions(TextAsset optionsFile)
@@ -50,6 +72,7 @@ internal static class NewsLoader
             var columns = l.Split(',');
             return new TitleOption()
             {
+                Id = columns[0],
                 LevelId = columns[1],
                 Score = int.Parse(columns[3]),
                 Title = columns[4],

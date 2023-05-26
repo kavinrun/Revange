@@ -1,39 +1,52 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class NewsThumbnail : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField]
-    private string title;
-    [Multiline]
-    [SerializeField]
-    private string content;
+    private News news;
+    public News News 
+    { 
+        set
+        {
+            news = value;
+            titleText.text = news.Title.Title;
+            GetComponent<Image>().color = news.Score switch
+            {
+                var s when s < 0 => negativeColor,
+                var s when s > 0 => positiveColor,
+                _ => neutralColor,
+            };
+        }
+        get => news;
+    }
     [SerializeField]
     private Text titleText;
     [SerializeField]
     private Text contentText;
     [SerializeField]
     private NewsDetailPopup detailPopupPrefab;
+    [Category("Color")]
+    [SerializeField]
+    private Color negativeColor;
+    [SerializeField]
+    private Color neutralColor;
+    [SerializeField]
+    private Color positiveColor;
     private NewsDetailPopup popup;
-
-    private void Start()
-    {
-        titleText.text = title;
-        contentText.text = content;
-    }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         if (popup == null)
         {
             var canvas = FindObjectOfType<Canvas>();
-            popup = GameObject.Instantiate<NewsDetailPopup>(detailPopupPrefab, canvas.transform);
+            popup = Instantiate(detailPopupPrefab, canvas.transform);
         }
-        popup.Title = title;
-        popup.Content = content;
+        popup.News = news;
         popup.gameObject.SetActive(true);
+        FindObjectOfType<NewsScore>().Score += news.Score;
     }
 }

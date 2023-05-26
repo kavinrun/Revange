@@ -1,0 +1,12 @@
+﻿序号,关卡,新闻题目,分数,标题,内容
+ID,levelId,newstitle,newsScore,,
+1,level1,new1_title,0,安东尼.迪恩 当选新一轮总统,content_10
+2,level2,new2_title,0,总统派出“青年军”维护城市治安,content_20
+3,level2,new3_title,3,“青年军”热心服务，赢得市民赞誉,content_21
+4,level2,new4_title,-3,“青年军”暴力执法，引发市民愤怒,content_22
+5,level3,new5_title,0,国内爆发新型病毒感染，卫生部门紧急应对,content_30
+6,level3,new6_title,2,国家紧急命令下达，坚决打赢抗疫战争,content_31
+7,level3,new7_title,-2,尊重人权，理性抗疫,content_32
+8,level4,new8_title,0,国家引入人工智能产品应对海岸病毒,content_40
+9,level4,new9_title,1,人工智能即是社会稳定的良药！,content_41
+10,level4,new10_title,-1,人工智能即是稳定疫情的良药,content_42
