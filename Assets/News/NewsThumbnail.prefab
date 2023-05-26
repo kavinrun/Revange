@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9091558272493719368}
   - component: {fileID: 5649565223746138631}
   m_Layer: 5
-  m_Name: News
+  m_Name: NewsThumbnail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

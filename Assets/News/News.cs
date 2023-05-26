@@ -1,39 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
-public class News : MonoBehaviour, IPointerClickHandler
+public class News
 {
-    [SerializeField]
-    private string title;
-    [Multiline]
-    [SerializeField]
-    private string content;
-    [SerializeField]
-    private Text titleText;
-    [SerializeField]
-    private Text contentText;
-    [SerializeField]
-    private NewsDetailPopup detailPopupPrefab;
-    private NewsDetailPopup popup;
+    public string OriginalTitle { get; set; }
+    public string LevelId { get; set; }
+    public TitleOption[] TitleOptions { get; set; }
+    public ParagraphOption[] Options { get; set; }
+    public int Score { get; set; }
+    public string ContentId { get; set; }
+}
 
-    private void Start()
-    {
-        titleText.text = title;
-        contentText.text = content;
-    }
+public class ParagraphOption
+{
+    public string LevelId { get; set; }
+    public string OptionId { get; set; }
+    public int Score { set; get; }
+    public string Content { set; get; }
+}
 
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        if (popup == null)
-        {
-            var canvas = FindObjectOfType<Canvas>();
-            popup = GameObject.Instantiate<NewsDetailPopup>(detailPopupPrefab, canvas.transform);
-        }
-        popup.Title = title;
-        popup.Content = content;
-        popup.gameObject.SetActive(true);
-    }
+public class TitleOption
+{
+    public string LevelId { get; set; }
+    public string Title { get; set; }
+    public int Score { set; get; }
 }
